@@ -56,10 +56,10 @@ exports.handler = async (event, context, callback) => {
         responseBody.years = [2017, 2019];
     }
 
-    var response = {
+    const response = {
         statusCode: responseCode,
         body: JSON.stringify(responseBody)
-    }
+    };
     callback(null, response);
 
 };
